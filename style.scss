@@ -1,0 +1,318 @@
+/*
+Theme Name: geek720
+Theme URI: http://www.geek720.com/
+Description: This is my theme for a tutorial.
+Version: 1.0
+Author: zhu linhai
+Author URI:
+
+*/
+@import "common";
+@import "font-awesome-4.7.0/scss/font-awesome";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+a:link {text-decoration:none; color: #464646;} /* 没访问过的链接样式 */
+a:visited {text-decoration:none;color: #464646;} /* 访问过的链接样式 */
+a:hover {text-decoration:none;color: #464646;} /* 鼠标进入链接区域的链接样式 */
+a:active {text-decoration:none;color: #464646;} /* 点击链接时的链接样式 */
+ul,ol {
+  list-style:none;
+}
+
+body{
+  font-family: "Open Sans", Sans-serif;
+  font-size: 12px;
+  text-align: left;
+  min-width: 1200px;
+  vertical-align: top;
+  background: #ffffff;
+}
+#header {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 70px;
+  background-color: #1FC992;
+  .logoFrame {
+    float: left;
+    width: 240px;
+    height: 70px;
+    margin-left: 20px;
+    line-height: 18px;
+    .logo {
+      height: 45px;
+      margin-top: 12px;
+    }
+  }
+  ul {
+    float: right;
+    width: 630px;
+    height: 70px;
+    margin-right: 20px;
+    list-style:none;
+    li {
+      float: right;
+      width: 85px;
+      line-height: 40px;
+      margin-left: 20px;
+      font-size: 16px;
+      color: white;
+      margin-top: 15px;
+      text-align: center;
+      a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+      }
+      a::after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: white;
+        transform: scale(0, 1);
+        transform-origin: center top;
+        transition: transform .3s;
+      }
+      a:hover::after {
+        transform: scale(1, 1);
+      }
+    }
+  }
+}
+
+.wrapper {
+  margin: 30px auto;
+  width: 1200px;
+  min-height: 620px;
+  clear: both;
+  .sidebar {
+    float: right;
+    width: 300px;
+    a {
+      font-size: 16px;
+      color: #636465;
+    }
+    .widgettitle {
+      font-size: 22px;
+      font-weight: normal;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .widget_recent_entries {
+      margin-top: 0;
+      ul {
+        list-style: circle inside;
+        li {
+          margin-top: 10px;
+          a {
+            text-decoration: underline;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .widget_categories {
+      margin-top: 30px;
+      ul {
+        border-top: 1px solid #EAEAEA;
+        li {
+          color: #636465;
+          font-size: 16px;
+          height: 44px;
+          line-height: 44px;
+          border-bottom: 1px solid #EAEAEA;
+        }
+        li:before {
+          width: 30px;
+          text-align: center;
+          font-family: FontAwesome;
+          display: inline-block;
+          padding-right: 10px;
+          vertical-align: middle;
+        }
+        .cat-item-20:before {
+          content: "\f219";
+        }
+        .cat-item-4:before {
+          content: "\f291";
+        }
+        .cat-item-19:before {
+          content: "\f0ac";
+        }
+      }
+    }
+    .widget_tag_cloud {
+      margin-top: 30px;
+      a {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        color: #636465;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        border: 1px solid #EAEAEA;
+        background-color: #f4f4f4;
+      }
+      a:hover {
+        background-color: #fafafa;
+      }
+    }
+  }
+  .pageInfo {
+    width: 840px;
+    .entry img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 10px;
+      color: #636465;
+    }
+    strong {
+      color: #333;
+      font-weight: bold;
+    }
+    .aligncenter {
+      display: block;
+      margin: 0 auto;
+    }
+    .wp-caption-text {
+      text-align: center;
+    }
+    .link {
+      overflow-x:auto;margin-top:20px;padding:15px;background:#fafafa;line-height:30px;
+      a {
+        font-size: 16px;
+        color: #0000ff;
+        text-decoration:underline;
+      }
+  }
+
+  h2 {
+    color: #555;
+    line-height: 30px;
+    margin: 20px 0;
+  }
+  .column {
+    width: 100%; height: 280px;
+    .left {
+      float: left;
+      max-width: 400px;
+      margin-top: -30px;
+    }
+    .right{
+      float: right;
+      width: 410px;
+      color: #636465;
+      font-size: 14px;
+      line-height: 24px;
+      margin-top: 20px;
+    }
+  }
+
+  }
+  .note a {
+    font-size: 16px;
+    color: #0000ff;
+    text-decoration:underline;
+  }
+
+}
+
+#footer {
+  width: 100%;
+  height: 54px;
+  text-align: center;
+  color: rgb(137,137,137);
+  background-color: rgb(246,246,246);
+  font-size: 14px;
+  line-height: 54px;
+}
+
+
+.navigation {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 20px;
+  margin-top: 30px;
+  font-size: 14px;
+  overflow: hidden;
+  color: #636465;
+  .fLeft {
+    float: left;
+    width: 380px;
+    text-align: left;
+    vertical-align: top;
+  }
+  .fRight {
+    float: right;
+    width: 380px;
+    text-align: right;
+    vertical-align: top;
+  }
+  a{
+    text-decoration: underline;
+  }
+}
+
+.page_navi{width:100%;height:36px;line-height:36px;text-align:center;overflow:hidden;padding-top:1em;margin-bottom: 20px}
+.page_navi a{padding:3px 8px;margin:2px;text-decoration:none;color:#888;background-color: #EAEAEB;border:1px solid #EAEAEB;border-radius: 3px;}
+.page_navi a:hover,.page_navi a.current{border:1px solid #C3C4C5;color:#ffffff;background-color:#C3C4C5;font-weight:bolder;}
+
+.codeview {
+  position: relative;
+  padding: 5px 15px;
+  background: #f4f4f4;
+  code {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: 0;
+    font-weight: 400;
+    font-family: 'Open Sans',sans-serif;
+  }
+  code::before {
+    margin-right: 5px;
+    color: #aaa;
+    font-weight: 400;
+    font-family: 'Open Sans',sans-serif;
+  }
+  .html::before {
+    content: '</>';
+  }
+  .css::before {
+    content: '{}';
+  }
+  .json::before{
+    content:'{}';
+  }
+  .js::before {
+    content: '{}';
+  }
+  .php::before{content:'<?>';}
+}
+pre{overflow-x:scroll;margin-top:20px;padding:15px;background:#fafafa;line-height:1.5;}
+pre code,dl dd pre code{font-size:14px;font-family:Consolas,Courier,sans-serif;color: #636465;}
+pre code{white-space:pre;word-wrap:normal;word-break:normal;}
+dl dd pre code{margin:0;padding:0;border-radius:0;background:0;}
+pre .comment{color:#58c5a2;}
+pre .comment02{color:#ccc;}
+pre .prenote{color:#e8554e;}
+.codeview+pre{margin-top:0;}
+pre+.codeview{margin-top:30px;}
+
