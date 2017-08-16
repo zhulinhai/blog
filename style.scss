@@ -7,13 +7,18 @@ Author: zhu linhai
 Author URI:
 
 */
-@import "common";
-@import "font-awesome-4.7.0/scss/font-awesome";
 
 *{
   margin: 0;
   padding: 0;
 }
+
+@import "common";
+@import "font-awesome-4.7.0/scss/font-awesome";
+@import "prism/themes/prism";
+@import "prism/themes/editormd.preview";
+@import "prism/themes/prism-line-numbers";
+
 a:link {text-decoration:none; color: #464646;} /* 没访问过的链接样式 */
 a:visited {text-decoration:none;color: #464646;} /* 访问过的链接样式 */
 a:hover {text-decoration:none;color: #464646;} /* 鼠标进入链接区域的链接样式 */
@@ -24,7 +29,7 @@ ul,ol {
 
 body{
   font-family: "Open Sans", Sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
   min-width: 1200px;
   vertical-align: top;
@@ -274,45 +279,4 @@ body{
 .page_navi a{padding:3px 8px;margin:2px;text-decoration:none;color:#888;background-color: #EAEAEB;border:1px solid #EAEAEB;border-radius: 3px;}
 .page_navi a:hover,.page_navi a.current{border:1px solid #C3C4C5;color:#ffffff;background-color:#C3C4C5;font-weight:bolder;}
 
-.codeview {
-  position: relative;
-  padding: 5px 15px;
-  background: #f4f4f4;
-  code {
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
-    background: 0;
-    font-weight: 400;
-    font-family: 'Open Sans',sans-serif;
-  }
-  code::before {
-    margin-right: 5px;
-    color: #aaa;
-    font-weight: 400;
-    font-family: 'Open Sans',sans-serif;
-  }
-  .html::before {
-    content: '</>';
-  }
-  .css::before {
-    content: '{}';
-  }
-  .json::before{
-    content:'{}';
-  }
-  .js::before {
-    content: '{}';
-  }
-  .php::before{content:'<?>';}
-}
-pre{overflow-x:scroll;margin-top:20px;padding:15px;background:#fafafa;line-height:1.5;}
-pre code,dl dd pre code{font-size:14px;font-family:Consolas,Courier,sans-serif;color: #636465;}
-pre code{white-space:pre;word-wrap:normal;word-break:normal;}
-dl dd pre code{margin:0;padding:0;border-radius:0;background:0;}
-pre .comment{color:#58c5a2;}
-pre .comment02{color:#ccc;}
-pre .prenote{color:#e8554e;}
-.codeview+pre{margin-top:0;}
-pre+.codeview{margin-top:30px;}
 

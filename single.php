@@ -5,7 +5,7 @@
         <?php if(have_posts()): ?>
             <?php while (have_posts()): the_post(); ?>
                 <h1 class="title"><?php the_title() ?></h1>
-                <div class="entry">
+                <div class="entry markdown-body">
                     <?php the_content(); ?>
                     <?php link_pages('<p><strong>Pages:</strong>', '</p>', 'number'); ?>
                 </div>
@@ -22,4 +22,5 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/prism/prism-line-numbers.js"></script>
 <?php get_footer(); ?>

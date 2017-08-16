@@ -13,6 +13,10 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="shortcut icon" href="<?php echo get_bloginfo('template_url'); ?>/favicon.ico" >
 
+<!--引入js文件-->
+<script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/prism/prism.js"></script>
+
 </head>
 <body>
     <div id="header">

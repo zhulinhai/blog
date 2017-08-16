@@ -4,7 +4,6 @@
         <div id="particles"></div>
     </div>
 
-    <script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/jquery-1.10.1.min.js"></script>
     <script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/jquery.particleground.js"></script>
     <script type="text/javascript">
         $(function () {
