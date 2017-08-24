@@ -16,6 +16,7 @@ Author URI:
 @import "common";
 @import "font-awesome-4.7.0/scss/font-awesome";
 @import "prism/themes/prism";
+@import "prism/themes/prism-twilight";
 @import "prism/themes/editormd.preview";
 @import "prism/themes/prism-line-numbers";
 
@@ -23,9 +24,6 @@ a:link {text-decoration:none; color: #464646;} /* 没访问过的链接样式 */
 a:visited {text-decoration:none;color: #464646;} /* 访问过的链接样式 */
 a:hover {text-decoration:none;color: #464646;} /* 鼠标进入链接区域的链接样式 */
 a:active {text-decoration:none;color: #464646;} /* 点击链接时的链接样式 */
-ul,ol {
-  list-style:none;
-}
 
 body{
   font-family: "Open Sans", Sans-serif;
@@ -104,6 +102,9 @@ body{
       font-size: 16px;
       color: #636465;
     }
+    ul,ol {
+      list-style:none;
+    }
     .widgettitle {
       font-size: 22px;
       font-weight: normal;
@@ -143,15 +144,6 @@ body{
           display: inline-block;
           padding-right: 10px;
           vertical-align: middle;
-        }
-        .cat-item-20:before {
-          content: "\f219";
-        }
-        .cat-item-4:before {
-          content: "\f291";
-        }
-        .cat-item-19:before {
-          content: "\f0ac";
         }
       }
     }
