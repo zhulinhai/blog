@@ -13,11 +13,11 @@ Author URI:
   padding: 0;
 }
 
-@import "common";
-@import "font-awesome/scss/font-awesome";
-@import "prism/themes/prism";
-@import "prism/themes/editormd.preview";
-@import "prism/themes/prism-line-numbers";
+@import "./common";
+@import "./font-awesome/scss/font-awesome";
+@import "./prism/themes/prism";
+@import "./prism/themes/editormd.preview";
+@import "./prism/themes/prism-line-numbers";
 
 a:link, a:visited, a:hover, a:active {text-decoration:none; color: #464646;}
 
@@ -107,15 +107,18 @@ body{
 }
 
 .wrapper {
-  padding: 30px;
   margin: 30px auto;
-  width: 1200px;
+  width: 1240px;
   min-height: 1024px;
   clear: both;
-  background-color: #fff;
+  background-color: transparent;
   .sidebar {
     float: right;
-    width: 300px;
+    width: 240px;
+    min-height: 1024px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px #C3C4C5;
     a {
       font-size: 16px;
       color: #636465;
@@ -189,7 +192,6 @@ body{
         font-size: 14px;
         vertical-align: top;
         padding: 5px 10px;
-        height: 30px;
         line-height: 30px;
         background-color: #f4f4f4;
         border: 1px solid #EAEAEA;
@@ -201,18 +203,16 @@ body{
     }
   }
   .pageInfo {
-    width: 840px;
+    width: 850px;
+    min-height: 1024px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px #C3C4C5;
     .entry img {
       display: block;
       max-width: 100%;
       height: auto;
       margin: 20px auto;
-    }
-    p {
-      font-size: 16px;
-      line-height: 24px;
-      margin-top: 10px;
-      color: #636465;
     }
     strong {
       color: #333;

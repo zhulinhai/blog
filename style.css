@@ -4669,15 +4669,18 @@ body {
     display: none; }
 
 .wrapper {
-  padding: 30px;
   margin: 30px auto;
-  width: 1200px;
+  width: 1240px;
   min-height: 1024px;
   clear: both;
-  background-color: #fff; }
+  background-color: transparent; }
   .wrapper .sidebar {
     float: right;
-    width: 300px; }
+    width: 240px;
+    min-height: 1024px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px #C3C4C5; }
     .wrapper .sidebar a {
       font-size: 16px;
       color: #636465; }
@@ -4733,7 +4736,6 @@ body {
         font-size: 14px;
         vertical-align: top;
         padding: 5px 10px;
-        height: 30px;
         line-height: 30px;
         background-color: #f4f4f4;
         border: 1px solid #EAEAEA; }
@@ -4741,17 +4743,16 @@ body {
         font-size: 14px;
         background-color: #fafafa; }
   .wrapper .pageInfo {
-    width: 840px; }
+    width: 850px;
+    min-height: 1024px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 1px #C3C4C5; }
     .wrapper .pageInfo .entry img {
       display: block;
       max-width: 100%;
       height: auto;
       margin: 20px auto; }
-    .wrapper .pageInfo p {
-      font-size: 16px;
-      line-height: 24px;
-      margin-top: 10px;
-      color: #636465; }
     .wrapper .pageInfo strong {
       color: #333;
       font-weight: bold; }
