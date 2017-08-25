@@ -4635,7 +4635,7 @@ body {
         text-decoration: none;
         color: white; }
       #header ul li a::before {
-        font-family: FontAwesome;
+        font-family: 'FontAwesome';
         margin-right: 5px; }
       #header ul li a::after {
         position: absolute;
@@ -4693,7 +4693,7 @@ body {
       margin-bottom: 15px; }
     .wrapper .sidebar .widgettitle:before {
       margin-right: 5px;
-      font-family: FontAwesome; }
+      font-family: 'FontAwesome'; }
     .wrapper .sidebar .widget_recent_entries {
       margin-top: 0; }
       .wrapper .sidebar .widget_recent_entries .widgettitle::before {

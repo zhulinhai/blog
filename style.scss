@@ -67,7 +67,7 @@ body{
         color: white;
       }
       a::before {
-        font-family: FontAwesome;
+        font-family: 'FontAwesome';
         margin-right: 5px;
       }
       a::after {
@@ -134,7 +134,7 @@ body{
     }
     .widgettitle:before {
       margin-right: 5px;
-      font-family: FontAwesome;
+      font-family: 'FontAwesome';
     }
     .widget_recent_entries {
       margin-top: 0;
