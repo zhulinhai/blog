@@ -14,7 +14,7 @@ Author URI:
 }
 
 @import "common";
-@import "font-awesome-4.7.0/scss/font-awesome";
+@import "font-awesome/scss/font-awesome";
 @import "prism/themes/prism";
 @import "prism/themes/editormd.preview";
 @import "prism/themes/prism-line-numbers";
@@ -66,6 +66,10 @@ body{
         text-decoration: none;
         color: white;
       }
+      a::before {
+        font-family: FontAwesome;
+        margin-right: 5px;
+      }
       a::after {
         position: absolute;
         left: 0;
@@ -85,7 +89,13 @@ body{
         -webkit-transform: scale(1,1);
       }
     }
+    li:nth-child(1) {a::before {content: $male;}}
+    li:nth-child(2) {a::before {content: $globe;}}
+    li:nth-child(3) {a::before {content: $desktop;}}
+    li:nth-child(4) {a::before {content: $comments;}}
+    li:nth-child(5) {a::before {content: $home;}}
   }
+
   .current_page_item {
     a {
       border-bottom: 2px solid white;
@@ -100,7 +110,7 @@ body{
   padding: 30px;
   margin: 30px auto;
   width: 1200px;
-  min-height: 620px;
+  min-height: 1024px;
   clear: both;
   background-color: #fff;
   .sidebar {
@@ -119,8 +129,15 @@ body{
       color: #333;
       margin-bottom: 15px;
     }
+    .widgettitle:before {
+      margin-right: 5px;
+      font-family: FontAwesome;
+    }
     .widget_recent_entries {
       margin-top: 0;
+      .widgettitle::before {
+        content: $book;
+      }
       ul {
         list-style: circle inside;
         li {
@@ -136,6 +153,9 @@ body{
     }
     .widget_categories {
       margin-top: 30px;
+      .widgettitle::before {
+        content: $tags;
+      }
       ul {
         border-top: 1px solid #EAEAEA;
         li {
@@ -144,11 +164,16 @@ body{
           height: 44px;
           line-height: 44px;
           border-bottom: 1px solid #EAEAEA;
+          a {
+            text-decoration: none;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
         }
         li:before {
           width: 30px;
           text-align: center;
-          font-family: FontAwesome;
           display: inline-block;
           padding-right: 10px;
           vertical-align: middle;
@@ -157,18 +182,20 @@ body{
     }
     .widget_tag_cloud {
       margin-top: 30px;
-      a {
-        display: inline-block;
-        *display: inline;
-        *zoom: 1;
-        color: #636465;
+      .widgettitle::before {
+        content: $cloud;
+      }
+      .tag-cloud-link {
+        font-size: 14px;
+        vertical-align: top;
+        padding: 5px 10px;
         height: 30px;
         line-height: 30px;
-        padding: 0 10px;
-        border: 1px solid #EAEAEA;
         background-color: #f4f4f4;
+        border: 1px solid #EAEAEA;
       }
-      a:hover {
+      .tag-cloud-link:hover {
+        font-size: 14px;
         background-color: #fafafa;
       }
     }
