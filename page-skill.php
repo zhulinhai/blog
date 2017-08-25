@@ -30,6 +30,6 @@
             </article>
         <?php endwhile; ?>
     </div>
-
+    <div class="page_navi"><?php par_pagenavi(6); ?></div>
 </div>
 <?php get_footer(); ?>

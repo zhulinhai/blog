@@ -4,11 +4,12 @@
     <?php get_sidebar(); ?>
     <div class="post-list">
         <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-        $args = array(
-            'showposts' => 6,
-            'paged' => $paged
-        );
-        query_posts($args);
+            $args = array(
+                'category_name'=> 'skill',
+                'showposts' => 6,
+                'paged' => $paged
+            );
+            query_posts($args);
         ?>
         <?php while ( have_posts() ) : the_post(); ?>
             <article class="post"><a href="<?php the_permalink() ?>">
@@ -27,7 +28,7 @@
             </a></article>
         <?php endwhile; ?>
     </div>
-
+    <div class="page_navi"><?php par_pagenavi(6); ?></div>
 </div>
 
 <?php get_footer(); ?>
